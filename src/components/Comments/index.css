@@ -1,0 +1,104 @@
+/* Write your CSS here */
+.comments-app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 35px;
+  padding-bottom: 25px;
+  font-family: 'Roboto';
+}
+
+.sub-comments-app-container {
+  width: 90%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-title {
+  color: #1e293b;
+}
+
+.comment-img-details-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid #cbd2d9;
+  padding-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .comment-img-details-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.comments-img {
+  width: 75%;
+  max-width: 350px;
+}
+
+@media screen and (min-width: 768px) {
+  .comments-img {
+    width: 50%;
+    order: 1;
+    margin-left: 20px;
+  }
+}
+
+.add-comment-container {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .add-comment-container {
+    width: 50%;
+  }
+}
+
+.desc {
+  color: #475569;
+}
+
+.name-input {
+  width: 100%;
+  margin-bottom: 12px;
+  border: 1px solid #dee0e3;
+  padding: 10px;
+  outline: none;
+}
+
+.comment-input-desc {
+  width: 100%;
+  border: 1px solid #dee0e3;
+  margin-bottom: 12px;
+  padding: 10px;
+  outline: none;
+}
+
+.add-btn {
+  background-color: #0284c7;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 8px;
+}
+
+.count {
+  background-color: #0284c7;
+  padding: 2px 8px;
+  color: #fff;
+  margin-right: 6px;
+  border: none;
+}
+
+.comments-list {
+  width: 100%;
+  padding: 0px;
+  margin: 0;
+  list-style-type: none;
+}
