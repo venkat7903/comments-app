@@ -35,6 +35,7 @@ class Comments extends Component {
       name,
       comment,
       isLiked: false,
+      date: new Date(),
       className: backgroundColorClassName,
     }
     this.setState(prevState => ({
