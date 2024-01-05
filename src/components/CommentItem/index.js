@@ -4,7 +4,7 @@ import './index.css'
 
 const CommentItem = props => {
   const {commentDetails, onLikeComment, onDeleteComment} = props
-  const {name, comment, isLiked, id, className} = commentDetails
+  const {name, comment, isLiked, id, className, date} = commentDetails
   const imgUrl = isLiked
     ? 'https://assets.ccbp.in/frontend/react-js/comments-app/liked-img.png'
     : 'https://assets.ccbp.in/frontend/react-js/comments-app/like-img.png'
@@ -15,7 +15,7 @@ const CommentItem = props => {
   }
 
   function getTime() {
-    return formatDistanceToNow(new Date())
+    return formatDistanceToNow(date)
   }
 
   const onClickDeleteBtn = () => {
